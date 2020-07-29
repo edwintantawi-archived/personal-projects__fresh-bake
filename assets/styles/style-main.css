@@ -1,0 +1,204 @@
+/* font face */
+@font-face {
+  font-family: alexBrush;
+  src: url(../fonts/AlexBrush.ttf);
+}
+
+@font-face {
+  font-family: quickSand;
+  src: url(../fonts/Quicksand.ttf);
+}
+
+@font-face {
+  font-family: pMarker;
+  src: url(../fonts/PermanentMarker.ttf);
+}
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'quickSand', sans-serif;
+}
+
+/* aditional css */
+.logo {
+  font-family: 'alexBrush';
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  display: inline;
+  height: 9999px;
+}
+
+/* end aditional css */
+
+/* header */
+header {
+  display: inline;
+}
+
+header div.brand {
+  display: flex;
+  align-items: center;
+}
+
+header nav div.brand img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+header nav {
+  position: sticky;
+  top: 0;
+  background-color: #9c634f;
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  border-bottom: 10px solid #f0d7a7;
+}
+
+header nav div.navbar a[id=pull] {
+  display: none;
+}
+
+header nav ul {
+  background-color: #894e3f;
+  padding: 20px 50px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 80px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: 'pMarker', sans-serif;
+  color: white;
+}
+
+/* end header */
+
+
+
+
+/* main */
+/* end main */
+/* footer */
+/*  end footer */
+
+
+
+
+
+/* responsive css */
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  /* header */
+  header nav div.brand img {
+    width: 40px;
+  }
+
+  header nav {
+    padding: 20px 20px;
+
+    flex-direction: column;
+  }
+
+  header nav div.navbar {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  header nav div.navbar ul {
+    display: none;
+  }
+
+  /* collapse  navbar */
+  header nav div.navbar a[id=pull] {
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+    background-color: #894e3f;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.5);
+  }
+
+  header nav div.navbar a#pull {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  header nav div.navbar a#pull::after {
+    content: '';
+    background: url(../images/nav-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  /* end collapse  navbar */
+  header nav ul {
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    padding: 15px;
+    margin-right: 0;
+    border-bottom: 2px solid white;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    font-family: 'pMarker', sans-serif;
+    color: white;
+  }
+
+  /* end header */
+
+
+}
+
+/* end mobile */
+
+
+/* tablet */
+@media screen and (min-width: 700px) and (max-width:1020px) {}
+
+/* end tablet */
