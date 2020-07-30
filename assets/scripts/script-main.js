@@ -1,5 +1,5 @@
-var pull = $('#pull'); // Variabel tombol navigasi (akan muncul hanya pada perangkat mobile)
-menu = $('nav ul'); // Variabel menu
+const pull = $('#pull');
+menu = $('nav div.navbar ul');
 
 $(pull).on('click', function (e) {
   e.preventDefault();

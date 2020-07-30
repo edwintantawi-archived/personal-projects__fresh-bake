@@ -1,0 +1,40 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+/* font face */
+@font-face {
+  font-family: alexBrush;
+  src: url(../fonts/AlexBrush.ttf);
+}
+
+@font-face {
+  font-family: quickSand;
+  src: url(../fonts/Quicksand.ttf);
+}
+
+@font-face {
+  font-family: pMarker;
+  src: url(../fonts/PermanentMarker.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'quickSand', sans-serif;
+  box-sizing: border-box;
+
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+body {
+  position: relative;
+}
+
+/* tablet */
+@media screen and (min-width: 850px) and (max-width:1300px) {}
+
+/* end tablet */
