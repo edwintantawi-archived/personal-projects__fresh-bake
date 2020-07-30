@@ -57,6 +57,9 @@ footer div.copyright span {
   font-size: 30px;
 }
 
+footer div.copyright p a {
+  color: white;
+}
 
 
 
@@ -127,8 +130,6 @@ footer div.copyright span {
     font-size: 25px;
   }
 
-  footer div.copyright p a {
-    color: white;
-  }
+
 
 }
