@@ -127,4 +127,8 @@ footer div.copyright span {
     font-size: 25px;
   }
 
+  footer div.copyright p a {
+    color: white;
+  }
+
 }
