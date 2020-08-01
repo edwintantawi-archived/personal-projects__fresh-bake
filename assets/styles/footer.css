@@ -3,9 +3,9 @@ footer img[alt='bottom banner'] {
   border-bottom: 10px solid #9c634f;
 }
 
-footer {
+/* footer {
   position: absolute;
-}
+} */
 
 footer section {
   display: flex;
